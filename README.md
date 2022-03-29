@@ -35,7 +35,7 @@ To get a local copy up and running follow these simple example steps.
 - **npx stylelint "**/\*.{css,scss}"\*\* : To test css code
 
 ## Live Demo
-- https://github.com/Dinma-Faith/Dinma-Portfolio.github.io
+- [live link](https://dinma-faith.github.io/Dinma-Portfolio.github.io/)
 
 👤 **Dinma-Faith**
 
