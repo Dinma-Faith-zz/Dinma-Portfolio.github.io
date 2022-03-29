@@ -1,4 +1,4 @@
-# Mobile-View-Portfolio
+# Portfolio
 
 The desktop version of my portfolio.
 
@@ -34,7 +34,8 @@ To get a local copy up and running follow these simple example steps.
 - **npx hint .** : To test html codes
 - **npx stylelint "**/\*.{css,scss}"\*\* : To test css code
 
-
+## Live Demo
+- [live link](https://dinma-faith.github.io/Dinma-Portfolio.github.io/)
 
 👤 **Dinma-Faith**
 
