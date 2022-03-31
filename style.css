@@ -39,7 +39,7 @@ li {
 
 .header .logo a {
   text-decoration: none;
-  color: #6070ff;
+  color: #2938c2;
 }
 
 .header .logo:hover {
@@ -84,7 +84,7 @@ li {
 }
 
 .connect {
-  color: #7f8cff;
+  color: #636bb9;
   padding-bottom: 12px;
 }
 
@@ -157,7 +157,7 @@ li {
 }
 
 .dev {
-  color: #7a869a;
+  color: #484a4d;
 }
 
 .para {
@@ -172,7 +172,7 @@ li {
   list-style: none;
   font-size: 13px;
   line-height: 16px;
-  color: #6070ff;
+  color: #1f2458;
   font-weight: 500;
   margin: 0 -12px;
   margin-bottom: 15px;
@@ -227,6 +227,28 @@ li {
 .btn:hover {
   color: #fff;
   background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.btn:active {
+  background: #4017cc;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+  color: #fff;
+}
+
+.btn:disabled {
+  border: 1px solid hsl(216, 14%, 79%);
+  box-sizing: border-box;
+  background: rgb(231, 232, 233) !important;
+  box-shadow: none !important;
+  border-radius: 8px;
+  color: #acb4c4;
+  cursor: not-allowed;
+}
+
+.btn:focus {
+  outline: none; 
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
@@ -509,9 +531,14 @@ input.form-control::placeholder {
 
   .contact-form {
     background-image: url(./img/contact-form-bg-desktop.png);
+    background-color: #121e8a;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+
+  .label {
+    color: #fff;
   }
 
   .h2 {
@@ -593,6 +620,8 @@ input.form-control::placeholder {
 
   .form-para {
     padding-inline: 35%;
+    color: #ffffff;
+    font-weight: 500;
   }
 
   .btn {
