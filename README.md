@@ -24,6 +24,7 @@ To get a local copy up and running follow these simple example steps.
 - Have a local version control like **git** install on your computer
 - Have knowledge about figma to adapt the design by following some specific requirements
 - Have an account and sign in on GitHub, as  online/remote version control system
+- Download waves to check project accessibilty
 
 ## Setup
 
@@ -44,6 +45,12 @@ To get a local copy up and running follow these simple example steps.
 - LinkedIn: [LinkedIn](https://linkedin.com/in/chidinma-faith)
 
 
+
+👤 **Ishmael Kargbo**
+
+- GitHub: [@githubhandle](https://github.com/ishmaelkargbo)
+- Twitter: [@twitterhandle](https://twitter.com/ishoKargbo)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/ishmael-kargbo-9a986a214) 
 
 ## 🤝 Contributing
 
