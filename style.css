@@ -37,6 +37,14 @@ li {
   transform: scale(1);
 }
 
+.mobile-modal a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: xx-large;
+  color: #fff;
+  cursor: pointer;
+}
+
 .header .logo a {
   text-decoration: none;
   color: #2938c2;
@@ -59,19 +67,11 @@ li {
   display: none;
   position: fixed;
   background: #6070ffc7;
-  backdrop-filter: blur(2px); 
+  backdrop-filter: blur(2px);
   top: 0;
   height: 100%;
   width: 100%;
   padding: 86px 96px 106px 28px;
-}
-
-.mobile-modal a {
-  text-decoration: none;
-  font-weight: bold;
-  font-size: xx-large;
-  color: #fff;
-  cursor: pointer;
 }
 
 .mobile-modal ul {
@@ -517,7 +517,6 @@ input.form-control::placeholder {
   /* Grid */
   .grid-container {
     display: grid;
-    grid-template: 100% 100%;
     padding: 5%;
   }
 
