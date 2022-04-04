@@ -21,7 +21,12 @@
       <header>
         <div class="header">
           <div class="logo"><a href="#">My Logo</a></div>
+
           <nav>
+            <span class="bars" id="barsBtn"
+              ><a href="#"><i class="fa-solid fa-bars"></i
+            ></a></span>
+
             <div class="menu-content">
               <ul>
                 <li><a href="#">Portfolio</a></li>
@@ -29,7 +34,6 @@
                 <li><a href="#">Contact</a></li>
               </ul>
             </div>
-            <span class="bars"><i class="fa-solid fa-bars"></i></span>
           </nav>
         </div>
       </header>
@@ -41,9 +45,9 @@
             Glad to see you!
           </h2>
           <p>
-            I’m a software developer! I can help you build a product , feature
+            I'm a software developer! I can help you build a product , feature
             or website Look through some of my work and experience! If you like
-            what you see and have a project you need coded, don’t hestiate to
+            what you see and have a project you need coded, don't hestiate to
             contact me.
           </p>
 
@@ -326,7 +330,7 @@
                 <span class="chevron"
                   ><i class="fa-solid fa-chevron-right"></i
                 ></span>
-                  </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -390,6 +394,17 @@
           </form>
         </div>
       </section>
+
     </main>
+
+    <div class="mobile-modal" id="contentModal">
+      <span class="close-btn" id="closeBtn">&times;</span>
+      <ul>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>
