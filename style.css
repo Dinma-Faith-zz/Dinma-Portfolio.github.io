@@ -37,6 +37,14 @@ li {
   transform: scale(1);
 }
 
+.mobile-modal a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: xx-large;
+  color: #fff;
+  cursor: pointer;
+}
+
 .header .logo a {
   text-decoration: none;
   color: #2938c2;
@@ -44,7 +52,7 @@ li {
 
 .header .logo:hover {
   transform: scale(3);
-  transition: all 5s;
+  transition: all 500ms;
 }
 
 .header .bars {
@@ -53,6 +61,34 @@ li {
 
 .menu-content {
   display: none;
+}
+
+.mobile-modal {
+  display: none;
+  position: fixed;
+  background: #6070ffc7;
+  backdrop-filter: blur(2px);
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 86px 96px 106px 28px;
+}
+
+.mobile-modal ul {
+  list-style-type: none;
+}
+
+.mobile-modal li {
+  margin-bottom: 24px;
+}
+
+.close-btn {
+  position: absolute;
+  color: #fff;
+  font-size: 50px;
+  top: 8px;
+  right: 25px;
+  cursor: pointer;
 }
 
 .intro {
@@ -334,7 +370,6 @@ span.chevron {
 }
 
 /* Contact form */
-
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -426,12 +461,18 @@ input.form-control::placeholder {
     display: none;
   }
 
+  .close-btn {
+    display: none;
+  }
+
   .menu-content ul {
     display: flex;
     align-items: center;
+    background-color: #fff;
     text-align: center;
     list-style: none;
     margin: 0 -12px;
+    padding: 0;
   }
 
   .menu-content li {
@@ -440,13 +481,21 @@ input.form-control::placeholder {
 
   .menu-content a {
     text-decoration: none;
+    cursor: pointer;
     font-size: 15px;
     font-weight: 500;
     color: #344563;
   }
 
+  .menu-content a:hover {
+    text-decoration: underline;
+    color: #091e42;
+  }
+
   .menu-content {
     display: flex;
+    width: 100%;
+    height: 10vh;
   }
 
   .intro {
@@ -473,7 +522,6 @@ input.form-control::placeholder {
   /* Grid */
   .grid-container {
     display: grid;
-    grid-template: 100% 100%;
     padding: 5%;
   }
 
