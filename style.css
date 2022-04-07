@@ -82,6 +82,13 @@ li {
   margin-bottom: 24px;
 }
 
+.close-button {
+  position: absolute;
+  font-size: 50px;
+  right: 54px;
+  cursor: pointer;
+}
+
 .close-btn {
   position: absolute;
   color: #fff;
@@ -155,7 +162,7 @@ li {
   margin-left: 30vw;
 }
 
-.cards {
+.cards, .cards2 {
   grid-column: 1/9;
   display: flex;
   flex-direction: column;
@@ -164,6 +171,19 @@ li {
   border-radius: 16px;
   padding: 16px 16px;
   margin: 50px 24px;
+}
+
+.cards2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 90%;
+  padding: 86px 96px 106px 28px;
+
+}
+
+.cards2.show {
+  display: block;
 }
 
 .h2 {
@@ -192,7 +212,7 @@ li {
   color: #344563;
 }
 
-.dev {
+.dev, dev2 {
   color: #484a4d;
 }
 
@@ -245,7 +265,7 @@ li {
   background: #fff;
 }
 
-.btn {
+button {
   background-color: #fff;
   border: none;
   border: 1px solid #396df2;
@@ -260,20 +280,20 @@ li {
   cursor: pointer;
 }
 
-.btn:hover {
+button:hover {
   color: #fff;
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
-.btn:active {
+button:active {
   background: #4017cc;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   color: #fff;
 }
 
-.btn:disabled {
+button:disabled {
   border: 1px solid hsl(216, 14%, 79%);
   box-sizing: border-box;
   background: rgb(231, 232, 233) !important;
@@ -283,9 +303,50 @@ li {
   cursor: not-allowed;
 }
 
-.btn:focus {
+button:focus {
   outline: none;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+/* Popup Modal */
+.modal-tonic {
+  padding: 18px 68px 22px 16px;
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.stack {
+  padding-left: 16px;
+}
+
+.dummy-text {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.projects .modal-projects {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ebecf0;
+  margin: 0 16px 50px 2px;
+
+}
+
+.btn2 img {
+  margin-left: 9px;
+}
+
+.btn3 img {
+  margin-left: 9px;
+}
+
+.btn3 {
+  margin-left: 10px;
 }
 
 /* About-Section */
@@ -672,7 +733,43 @@ input.form-control::placeholder {
     font-weight: 500;
   }
 
-  .btn {
+  .btn2 {
     margin-left: 34%;
   }
+
+  .btn3 {
+    margin-left: 34%;
+  }
+
+  /* Popup Modal */
+  .cards2 {
+    /* display: none; */
+    flex-direction: column;
+  }
+
+  .modal-content {
+    display: flex;
+    margin-top: 59px;
+    margin-bottom: 30px;
+    gap: 25px;
+  }
+
+  .button {
+    display: flex;
+    gap: 30px;
+    width: 300px;
+  }
+
+  .dummy-text {
+    /* width: 700px; */
+    font-weight: 400;
+    font-size: 16px;
+    color: #344563;
+  }
+
+  #modalButton {
+    margin-left: 0;
+  }
+
+  
 }
