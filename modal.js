@@ -107,8 +107,8 @@ function show() {
   }
   for (let i = 0; i < popUp.length; i += 1) {
     popUp[i].addEventListener('click', () => {
-    popUpModal(projects[i]);
-    viewModal.classList.toggle('show');
+      popUpModal(projects[i]);
+      viewModal.classList.toggle('show');
     });
   }
 }show();
@@ -116,7 +116,7 @@ function show() {
 const buttonCloseX = document.getElementById('hideModal');
 const viewModal = document.querySelector('.cards2');
 
-buttonCloseX.addEventListener('click', hideModal);
 function hideModal() {
   viewModal.classList.remove('show');
 }
+buttonCloseX.addEventListener('click', hideModal);

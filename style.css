@@ -767,7 +767,8 @@ input.form-control::placeholder {
     color: #344563;
   }
 
-  #modalButton {
+  #seeLiveBtn,
+  #seeSourceBtn {
     margin-left: 0;
   }
 }
