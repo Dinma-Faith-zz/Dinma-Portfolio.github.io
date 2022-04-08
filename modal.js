@@ -58,31 +58,31 @@ function show() {
         gridContainer.innerHTML += `
         <div class="cards">
           <img
-            class="work-images"
-            src="${projects[i].imageLinks}"
+            class=work-images
+            src=${projects[i].imageLinks}
             alt="tonic project"
           />
 
           <div class="content-wrap">
             <div>
-              <h2 class="h2">"${projects[i].title}"</h2>
+              <h2 class="h2">${projects[i].title}</h2>
 
               <ul class="top">
-                <li class="canopy">"${projects[i].company}" CANOPY</li>
+                <li class="canopy">${projects[i].company}</li>
                 <li><img src="./img/counter.png" alt="ash-counter" /></li>
-                <li class="dev">"${projects[i].role}"</li>
+                <li class="dev">${projects[i].role}</li>
                 <li><img src="./img/counter.png" alt="ash-counter" /></li>
-                <li class="dev">"${projects[i].year}"</li>
+                <li class="dev">${projects[i].year}</li>
               </ul>
             </div>
 
             <p class="para">
-            "${projects[i].description}"
+            ${projects[i].description}
             </p>
 
             <div class="projects">
               <ul>
-                "${works}"
+                ${works}
               </ul>
             </div>
 
@@ -94,19 +94,21 @@ function show() {
     }
 
     const viewModal = document.querySelector('.cards2')
-    const buttonCloseX = document.getElementById('closeBtn')
+    const buttonCloseX = document.querySelector('.close-button')
     const popUp = document.querySelectorAll('.btn-project')
     const modalTonic = document.querySelector('.modal-tonic')
     const stack = document.querySelector('.canopy')
     const backEnd = document.querySelector('.dev')
     const year = document.querySelector('.dev2')
-    const image = document.querySelector('.tonics-img')
+    const image = document.querySelector('.modalImg')
     const text = document.querySelector('.dummy-text')
     const htmlProject = document.querySelector('.html-text')
     const cssProject = document.querySelector('.css-text')
     const jsProject = document.querySelector('.js-text')
     const firstBtn = document.querySelector('.btn2')
     const secondBtn = document.querySelector('.btn3')
+
+    
     
     for (let i = 0; i < popUp.length; i += 1) {
     
@@ -119,19 +121,20 @@ function show() {
     }
 
     function popUpModal(project) {
-      // console.log(viewModal);
       modalTonic.innerHTML = project.title;
       stack.innerHTML = project.description;
-      backEnd.innerHTML = project.role
-      year.innerHTML = project.year
-      tonicsImg.innerHTML = project.imageLinks  
+      backEnd.innerHTML = project.role;
+      year.innerHTML = project.year;
     }
-
-    const closeButton = document.querySelector('#closeBtn')
-    closeButton.addEventListener('click', btnClose())
-    function btnClose() {
-      viewModal.classList.toggle('show');
-      // console.log(closeButton)
-    }
-    
+   
 }show();
+
+const buttonCloseX = document.getElementById('closeBtn')
+const viewModal = document.querySelector('.cards2')
+
+buttonCloseX.addEventListener('click', hideModal)
+
+    function hideModal() {
+      console.log(buttonCloseX);
+      viewModal.classList.remove('show');
+    }

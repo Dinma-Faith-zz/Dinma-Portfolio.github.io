@@ -87,6 +87,7 @@ li {
   font-size: 50px;
   right: 54px;
   cursor: pointer;
+  color: #67798e;
 }
 
 .close-btn {
@@ -177,9 +178,7 @@ li {
   display: none;
   position: fixed;
   top: 0;
-  width: 90%;
-  padding: 86px 96px 106px 28px;
-
+  width: 60%;
 }
 
 .cards2.show {
@@ -212,7 +211,7 @@ li {
   color: #344563;
 }
 
-.dev, dev2 {
+.dev, .dev2 {
   color: #484a4d;
 }
 
