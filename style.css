@@ -163,7 +163,7 @@ li {
   margin-left: 30vw;
 }
 
-.cards, 
+.cards,
 .cards2 {
   grid-column: 1/10;
   display: flex;
@@ -212,7 +212,7 @@ li {
   color: #344563;
 }
 
-.dev, 
+.dev,
 .dev2 {
   color: #484a4d;
 }

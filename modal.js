@@ -93,39 +93,30 @@ function show() {
   }
 
   const viewModal = document.querySelector('.cards2');
-  const buttonCloseX = document.querySelector('.close-button');
   const popUp = document.querySelectorAll('.btn-project');
   const modalTonic = document.querySelector('.modal-tonic');
   const stack = document.querySelector('.canopy');
   const backEnd = document.querySelector('.dev');
   const year = document.querySelector('.dev2');
-  const text = document.querySelector('.dummy-text');
-  const htmlProject = document.querySelector('.html-text');
-  const cssProject = document.querySelector('.css-text');
-  const jsProject = document.querySelector('.js-text');
-  const firstBtn = document.querySelector('.btn2');
-  const secondBtn = document.querySelector('.btn3');
- 
-  for (let i = 0; i < popUp.length; i += 1) { 
+
+  for (let i = 0; i < popUp.length; i += 1) {
     popUp[i].addEventListener('click', () => {
     popUpModal(projects[i]);
-    viewModal.classList.toggle('show'); 
+    viewModal.classList.toggle('show');
     });
   }
-
-function popUpModal(project) {
-  modalTonic.innerHTML = project.title;
-  stack.innerHTML = project.description;
-  backEnd.innerHTML = project.role;
-  year.innerHTML = project.year;
-}
-   
+  function popUpModal(project) {
+    modalTonic.innerHTML = project.title;
+    stack.innerHTML = project.description;
+    backEnd.innerHTML = project.role;
+    year.innerHTML = project.year;
+  }  
 }show();
 
-  const buttonCloseX = document.getElementById('closeBtn')
-  const viewModal = document.querySelector('.cards2');
+const buttonCloseX = document.getElementById('closeBtn');
+const viewModal = document.querySelector('.cards2');
 
-buttonCloseX.addEventListener('click', hideModal)
-  function hideModal() {
+buttonCloseX.addEventListener('click', hideModal);
+function hideModal() {
   viewModal.classList.remove('show');
 }
