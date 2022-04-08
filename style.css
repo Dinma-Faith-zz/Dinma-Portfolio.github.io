@@ -163,8 +163,9 @@ li {
   margin-left: 30vw;
 }
 
-.cards, .cards2 {
-  grid-column: 1/9;
+.cards, 
+.cards2 {
+  grid-column: 1/10;
   display: flex;
   flex-direction: column;
   background: #fff;
@@ -175,10 +176,10 @@ li {
 }
 
 .cards2 {
-  display: none;
-  position: fixed;
+  /* display: none; */
+  /* position: fixed; */
   top: 0;
-  width: 60%;
+  width: 100%;
 }
 
 .cards2.show {
@@ -211,7 +212,8 @@ li {
   color: #344563;
 }
 
-.dev, .dev2 {
+.dev, 
+.dev2 {
   color: #484a4d;
 }
 
@@ -333,7 +335,6 @@ button:focus {
   padding-bottom: 20px;
   border-bottom: 1px solid #ebecf0;
   margin: 0 16px 50px 2px;
-
 }
 
 .btn2 img {
@@ -769,6 +770,4 @@ input.form-control::placeholder {
   #modalButton {
     margin-left: 0;
   }
-
-  
 }

@@ -1,61 +1,60 @@
-const gridContainer = document.querySelector('.grid-container')
+const gridContainer = document.querySelector('.grid-container');
 
 const projects = [
-    {
-        title: 'Tonic',
-        description: 'A daily selection of privately personalized reads no accounts or sign-ups required.',
-        imageLinks: './img/snapshoot-portfolio.png',
-        technologies: ['html', 'css', 'javascript'],
-        role: 'Back End Dev',
-        year: '2022',
-        company: 'Canopy',
-        live: 'https://dinma-faith.github.io/Dinma-Portfolio.github.io/',
-        source: 'https://github.com/Dinma-Faith/Dinma-Portfolio',
-    },
-    {
-        title: 'Multi-Post Stories',
-        description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        imageLinks: './img/snapshoot-b.png',
-        technologies: ['html', 'css', 'javascript'],
-        role: 'Back End Dev',
-        year: '2022',
-        company: 'Canopy',
-        live: 'https://dinma-faith.github.io/Dinma-Portfolio.github.io/',
-        source: 'https://github.com/Dinma-Faith/Dinma-Portfolio',
-    },
-    {
-        title: 'Tonic',
-        description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        imageLinks: './img/snapshoot-c.png',
-        technologies: ['html', 'css', 'javascript'],
-        role: 'Back End Dev',
-        year: '2022',
-        company: 'Canopy',
-        live: 'https://dinma-faith.github.io/Dinma-Portfolio.github.io/',
-        source: 'https://github.com/Dinma-Faith/Dinma-Portfolio',
-    },
-    {
-        title: 'Multi-Post Stories',
-        description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        imageLinks: './img/snapshoot-d.png',
-        technologies: ['html', 'css', 'javascript'],
-        role: 'Back End Dev',
-        year: '2022',
-        company: 'Canopy',
-        live: 'https://dinma-faith.github.io/Dinma-Portfolio.github.io/',
-        source: 'https://github.com/Dinma-Faith/Dinma-Portfolio',
-    }
+  {
+    title: 'Tonic',
+    description: 'A daily selection of privately personalized reads no accounts or sign-ups required.',
+    imageLinks: './img/snapshoot-portfolio.png',
+    technologies: ['html', 'css', 'javascript'],
+    role: 'Back End Dev',
+    year: '2022',
+    company: 'Canopy',
+    live: 'https://dinma-faith.github.io/Dinma-Portfolio.github.io/',
+    source: 'https://github.com/Dinma-Faith/Dinma-Portfolio',
+ },
+  {
+    title: 'Multi-Post Stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    imageLinks: './img/snapshoot-b.png',
+    technologies: ['html', 'css', 'javascript'],
+    role: 'Back End Dev',
+    year: '2022',
+    company: 'Canopy',
+    live: 'https://dinma-faith.github.io/Dinma-Portfolio.github.io/',
+    source: 'https://github.com/Dinma-Faith/Dinma-Portfolio',
+  },
+  {
+    title: 'Tonic',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    imageLinks: './img/snapshoot-c.png',
+    technologies: ['html', 'css', 'javascript'],
+    role: 'Back End Dev',
+    year: '2022',
+    company: 'Canopy',
+    live: 'https://dinma-faith.github.io/Dinma-Portfolio.github.io/',
+    source: 'https://github.com/Dinma-Faith/Dinma-Portfolio',
+  },
+  {
+    title: 'Multi-Post Stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    imageLinks: './img/snapshoot-d.png',
+    technologies: ['html', 'css', 'javascript'],
+    role: 'Back End Dev',
+    year: '2022',
+    company: 'Canopy',
+    live: 'https://dinma-faith.github.io/Dinma-Portfolio.github.io/',
+    source: 'https://github.com/Dinma-Faith/Dinma-Portfolio',
+  },
 ];
 
-
 function show() {
-    gridContainer.innerHTML = ''
-    for (let i = 0; i < projects.length; i += 1) {
-        let works = ''
-        for (let j = 0; j < projects[i].technologies.length; j += 1) {
-            works += `<li>${projects[i].technologies[j]}</li>`
-        }
-        gridContainer.innerHTML += `
+  gridContainer.innerHTML = '';
+  for (let i = 0; i < projects.length; i += 1) {
+    let works = '';
+    for (let j = 0; j < projects[i].technologies.length; j += 1) {
+      works += `<li>${projects[i].technologies[j]}</li>`;
+    }
+    gridContainer.innerHTML += `
         <div class="cards">
           <img
             class=work-images
@@ -90,50 +89,44 @@ function show() {
               <button type="submit" class="btn btn-project" id="openBtnModal">See Project</button>
             </div>
           </div>
-        </div>`
-    }
+        </div>`;
+  }
 
-    const viewModal = document.querySelector('.cards2')
-    const buttonCloseX = document.querySelector('.close-button')
-    const popUp = document.querySelectorAll('.btn-project')
-    const modalTonic = document.querySelector('.modal-tonic')
-    const stack = document.querySelector('.canopy')
-    const backEnd = document.querySelector('.dev')
-    const year = document.querySelector('.dev2')
-    const image = document.querySelector('.modalImg')
-    const text = document.querySelector('.dummy-text')
-    const htmlProject = document.querySelector('.html-text')
-    const cssProject = document.querySelector('.css-text')
-    const jsProject = document.querySelector('.js-text')
-    const firstBtn = document.querySelector('.btn2')
-    const secondBtn = document.querySelector('.btn3')
+  const viewModal = document.querySelector('.cards2');
+  const buttonCloseX = document.querySelector('.close-button');
+  const popUp = document.querySelectorAll('.btn-project');
+  const modalTonic = document.querySelector('.modal-tonic');
+  const stack = document.querySelector('.canopy');
+  const backEnd = document.querySelector('.dev');
+  const year = document.querySelector('.dev2');
+  const image = document.querySelector('.modalImg');
+  const text = document.querySelector('.dummy-text');
+  const htmlProject = document.querySelector('.html-text');
+  const cssProject = document.querySelector('.css-text');
+  const jsProject = document.querySelector('.js-text');
+  const firstBtn = document.querySelector('.btn2');
+  const secondBtn = document.querySelector('.btn3');
+ 
+  for (let i = 0; i < popUp.length; i += 1) { 
+    popUp[i].addEventListener('click', () => {
+    popUpModal(projects[i]);
+    viewModal.classList.toggle('show'); 
+    });
+  }
 
-    
-    
-    for (let i = 0; i < popUp.length; i += 1) {
-    
-      popUp[i].addEventListener('click', () => {
-        popUpModal(projects[i]);
-
-        viewModal.classList.toggle('show');
-        
-      });
-    }
-
-    function popUpModal(project) {
-      modalTonic.innerHTML = project.title;
-      stack.innerHTML = project.description;
-      backEnd.innerHTML = project.role;
-      year.innerHTML = project.year;
-    }
+  function popUpModal(project) {
+    modalTonic.innerHTML = project.title;
+    stack.innerHTML = project.description;
+    backEnd.innerHTML = project.role;
+    year.innerHTML = project.year;
+  }
    
 }show();
 
-const buttonCloseX = document.getElementById('closeBtn')
-const viewModal = document.querySelector('.cards2')
+  const buttonCloseX = document.getElementById('closeBtn')
+  const viewModal = document.querySelector('.cards2')
 
-buttonCloseX.addEventListener('click', hideModal)
-
+  buttonCloseX.addEventListener('click', hideModal)
     function hideModal() {
       console.log(buttonCloseX);
       viewModal.classList.remove('show');
