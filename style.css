@@ -176,11 +176,9 @@ li {
 }
 
 .cards2 {
-  /* display: none; */
-  
-  /* position: fixed; */
+  display: none;
+  position: fixed;
   top: 0;
-  width: 100%;
 }
 
 .cards2.show {
@@ -213,9 +211,19 @@ li {
   color: #344563;
 }
 
+.top2 {
+  display: flex;
+  margin-left: 31%;
+  margin-top: -9%;
+}
+
 .dev,
 .dev2 {
   color: #484a4d;
+}
+
+.dev2 {
+  margin-left: 13%;
 }
 
 .para {
@@ -651,6 +659,10 @@ input.form-control::placeholder {
     color: #fff;
   }
 
+  .popup-img {
+    width: 100%;
+  }
+
   .h2 {
     font-weight: 700;
     line-height: 52px;
@@ -671,6 +683,11 @@ input.form-control::placeholder {
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .top2 {
+    margin-left: 8%;
+    margin-top: -2%;
   }
 
   .about-section {
@@ -744,8 +761,13 @@ input.form-control::placeholder {
 
   /* Popup Modal */
   .cards2 {
-    /* display: none; */
+    display: none;
+    box-sizing: border-box;
     flex-direction: column;
+  }
+
+  .dev2 {
+    margin-left: 3%;
   }
 
   .modal-content {
