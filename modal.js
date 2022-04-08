@@ -11,7 +11,7 @@ const projects = [
     company: 'Canopy',
     live: 'https://dinma-faith.github.io/Dinma-Portfolio.github.io/',
     source: 'https://github.com/Dinma-Faith/Dinma-Portfolio',
- },
+  },
   {
     title: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -99,21 +99,21 @@ function show() {
   const backEnd = document.querySelector('.dev');
   const year = document.querySelector('.dev2');
 
+  function popUpModal(project) {
+    modalTonic.innerHTML = project.title;
+    stack.innerHTML = project.description;
+    backEnd.innerHTML = project.role;
+    year.innerHTML = project.year;
+  }
   for (let i = 0; i < popUp.length; i += 1) {
     popUp[i].addEventListener('click', () => {
     popUpModal(projects[i]);
     viewModal.classList.toggle('show');
     });
   }
-  function popUpModal(project) {
-    modalTonic.innerHTML = project.title;
-    stack.innerHTML = project.description;
-    backEnd.innerHTML = project.role;
-    year.innerHTML = project.year;
-  }  
 }show();
 
-const buttonCloseX = document.getElementById('closeBtn');
+const buttonCloseX = document.getElementById('hideModal');
 const viewModal = document.querySelector('.cards2');
 
 buttonCloseX.addEventListener('click', hideModal);
