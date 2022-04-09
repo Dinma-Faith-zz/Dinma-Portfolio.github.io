@@ -84,7 +84,7 @@ li {
 .close-button {
   position: absolute;
   font-size: 50px;
-  right:48px;
+  right: 48px;
   cursor: pointer;
   color: #67798e;
 }
@@ -197,7 +197,7 @@ li {
 #overlay.active {
   opacity: 1;
   pointer-events: all;
-} 
+}
 
 .modalmobile-img {
   display: block;
@@ -353,10 +353,6 @@ button:focus {
   margin-top: -25px;
 }
 
-.dummy-textmobile {
-  display: block;
-}
-
 .dummy-textdesktop {
   display: none;
 }
@@ -368,6 +364,7 @@ button:focus {
   font-size: 15px;
   line-height: 24px;
   color: #344563;
+  display: block;
 }
 
 .wrapper.active {
@@ -806,7 +803,7 @@ input.form-control::placeholder {
     flex-direction: column;
     margin: 142px 77px;
     overflow: scroll;
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     left: 0;
   }
@@ -829,7 +826,7 @@ input.form-control::placeholder {
   .modal-projects.html {
     margin-bottom: 10px;
   }
-  
+
   .close-button {
     position: absolute;
     font-size: 50px;
@@ -854,7 +851,7 @@ input.form-control::placeholder {
   #overlay.active {
     opacity: 1;
     pointer-events: all;
-  } 
+  }
 
   .button {
     display: flex;
@@ -873,7 +870,7 @@ input.form-control::placeholder {
   }
 
   .stack {
-    padding-left: 0px;
+    padding-left: 0;
     margin-top: -26px;
     margin-bottom: 20px;
   }

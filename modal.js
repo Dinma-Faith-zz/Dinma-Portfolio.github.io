@@ -101,7 +101,6 @@ function show() {
 
   function popUpModal(project) {
     modalTonic.innerHTML = project.title;
-    // stack.innerHTML = project.description;
     backEnd.innerHTML = project.role;
     year.innerHTML = project.year;
   }
