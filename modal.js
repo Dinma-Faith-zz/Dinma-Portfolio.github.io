@@ -92,12 +92,13 @@ function show() {
         </div>`;
   }
 
-  const viewModal = document.querySelector('.vanish');
+  // const viewModal = document.querySelector('.vanish');
   const popUp = document.querySelectorAll('.btn-project');
   const modalTonic = document.querySelector('.modal-h2');
   const stack = document.querySelector('#modalCanopy');
   const backEnd = document.querySelector('#modalDev');
   const year = document.querySelector('#modalDev2');
+  const wrapper = document.querySelector('.wrapper');
 
   function popUpModal(project) {
     modalTonic.innerHTML = project.title;
@@ -108,16 +109,16 @@ function show() {
   for (let i = 0; i < popUp.length; i += 1) {
     popUp[i].addEventListener('click', () => {
       popUpModal(projects[i]);
-      wrapper.style.display = 'block'
+      wrapper.style.display = 'block';
     });
   }
 }show();
 
 const buttonCloseX = document.getElementById('hideModal');
-const viewModal = document.querySelector('.vanish');
+// const viewModal = document.querySelector('.vanish');
 const wrapper = document.querySelector('.wrapper');
 
 function hideModal() {
-  wrapper.style.display = 'none'
+  wrapper.style.display = 'none';
 }
 buttonCloseX.addEventListener('click', hideModal);
