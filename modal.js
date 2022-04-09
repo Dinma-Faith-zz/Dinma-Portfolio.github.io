@@ -92,7 +92,7 @@ function show() {
         </div>`;
   }
 
-  const viewModal = document.querySelector('.cards2');
+  const viewModal = document.querySelector('.vanish');
   const popUp = document.querySelectorAll('.btn-project');
   const modalTonic = document.querySelector('.modal-h2');
   const stack = document.querySelector('#modalCanopy');
@@ -101,21 +101,23 @@ function show() {
 
   function popUpModal(project) {
     modalTonic.innerHTML = project.title;
+    stack.innerHTML = project.company;
     backEnd.innerHTML = project.role;
     year.innerHTML = project.year;
   }
   for (let i = 0; i < popUp.length; i += 1) {
     popUp[i].addEventListener('click', () => {
       popUpModal(projects[i]);
-      viewModal.classList.toggle('show');
+      wrapper.style.display = 'block'
     });
   }
 }show();
 
 const buttonCloseX = document.getElementById('hideModal');
-const viewModal = document.querySelector('.cards2');
+const viewModal = document.querySelector('.vanish');
+const wrapper = document.querySelector('.wrapper');
 
 function hideModal() {
-  viewModal.classList.remove('show');
+  wrapper.style.display = 'none'
 }
 buttonCloseX.addEventListener('click', hideModal);

@@ -162,8 +162,7 @@ li {
   margin-left: 30vw;
 }
 
-.cards,
-.cards2 {
+.cards {
   grid-column: 1/10;
   display: flex;
   flex-direction: column;
@@ -174,29 +173,29 @@ li {
   margin: 50px 24px;
 }
 
-.cards2 {
+.suc {
   display: none;
-  position: fixed;
-  top: 0;
-  overflow-y: scroll;
 }
 
-#overlay {
-  position: fixed;
-  opacity: 0;
-  transition: 400ms ease-in-out;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #c1c7d0cf;
-  backdrop-filter: blur(5px);
-  pointer-events: none;
+.suc.visible {
+  display: block;
 }
 
-#overlay.active {
-  opacity: 1;
-  pointer-events: all;
+.err {
+  display: none;
+}
+
+.err.show {
+  display: block;
+}
+
+.cards2 {
+  box-sizing: border-box;
+  border: 2px solid #dfe1e6;
+  border-radius: 16px;
+  padding-inline: 16px;
+  margin-inline: 24px;
+  background-color: #fff;
 }
 
 .modalmobile-img {
@@ -207,7 +206,7 @@ li {
   display: none;
 }
 
-.cards2.show {
+.vanish.show {
   display: block;
 }
 
@@ -288,7 +287,7 @@ li {
 }
 
 .button {
-margin-top: 25px;
+  margin-top: 25px;
 }
 
 button {
@@ -367,8 +366,16 @@ button:focus {
   display: block;
 }
 
-.wrapper.active {
-  opacity: 0.4;
+.wrapper {
+  background-color: #979493;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  overflow-y: auto;
+  display: none;
 }
 
 .projects .modal-projects {
@@ -697,10 +704,6 @@ input.form-control::placeholder {
     color: #fff;
   }
 
-  .wrapper.active {
-    opacity: 0.4;
-  }
-
   .popup-img {
     width: 100%;
   }
@@ -798,14 +801,14 @@ input.form-control::placeholder {
 
   /* Popup Modal */
   .cards2 {
-    display: none;
     box-sizing: border-box;
     flex-direction: column;
-    margin: 142px 77px;
-    overflow: scroll;
+    overflow-x: auto;
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .projects .bootstraps {
@@ -835,28 +838,10 @@ input.form-control::placeholder {
     color: #67798e;
   }
 
-  #overlay {
-    position: fixed;
-    opacity: 0;
-    transition: 400ms ease-in-out;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #c1c7d0cf;
-    backdrop-filter: blur(5px);
-    pointer-events: none;
-  }
-
-  #overlay.active {
-    opacity: 1;
-    pointer-events: all;
-  }
-
   .button {
     display: flex;
     gap: 30px;
-    width: 300px;
+    width: 325px;
     padding-top: 15px;
   }
 
