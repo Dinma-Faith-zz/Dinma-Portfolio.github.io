@@ -7,6 +7,7 @@ function validate(e) {
   } else if (email.value === email.value.toLowerCase()) {
     const suc = document.querySelector('.suc');
     suc.classList.toggle('visible');
-  } }
+  }
+}
 const submit = document.getElementById('get-button2');
 submit.addEventListener('click', validate);

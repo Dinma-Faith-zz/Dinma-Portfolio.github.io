@@ -92,7 +92,6 @@ function show() {
         </div>`;
   }
 
-  // const viewModal = document.querySelector('.vanish');
   const popUp = document.querySelectorAll('.btn-project');
   const modalTonic = document.querySelector('.modal-h2');
   const stack = document.querySelector('#modalCanopy');
@@ -115,7 +114,6 @@ function show() {
 }show();
 
 const buttonCloseX = document.getElementById('hideModal');
-// const viewModal = document.querySelector('.vanish');
 const wrapper = document.querySelector('.wrapper');
 
 function hideModal() {
