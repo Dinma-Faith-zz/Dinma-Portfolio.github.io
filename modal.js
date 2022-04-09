@@ -94,14 +94,14 @@ function show() {
 
   const viewModal = document.querySelector('.cards2');
   const popUp = document.querySelectorAll('.btn-project');
-  const modalTonic = document.querySelector('.modal-tonic');
-  const stack = document.querySelector('.canopy');
-  const backEnd = document.querySelector('.dev');
-  const year = document.querySelector('.dev2');
+  const modalTonic = document.querySelector('.modal-h2');
+  const stack = document.querySelector('#modalCanopy');
+  const backEnd = document.querySelector('#modalDev');
+  const year = document.querySelector('#modalDev2');
 
   function popUpModal(project) {
     modalTonic.innerHTML = project.title;
-    stack.innerHTML = project.description;
+    // stack.innerHTML = project.description;
     backEnd.innerHTML = project.role;
     year.innerHTML = project.year;
   }

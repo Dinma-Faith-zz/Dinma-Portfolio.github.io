@@ -25,7 +25,6 @@ li {
   align-items: center;
   background-color: #fff;
   padding: 10px 24px;
-  position: fixed;
   width: 100%;
 }
 
@@ -85,7 +84,7 @@ li {
 .close-button {
   position: absolute;
   font-size: 50px;
-  right: 54px;
+  right:48px;
   cursor: pointer;
   color: #67798e;
 }
@@ -179,6 +178,33 @@ li {
   display: none;
   position: fixed;
   top: 0;
+  overflow-y: scroll;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 400ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c1c7d0cf;
+  backdrop-filter: blur(5px);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+} 
+
+.modalmobile-img {
+  display: block;
+}
+
+.modaldesktop-img {
+  display: none;
 }
 
 .cards2.show {
@@ -201,10 +227,6 @@ li {
   line-height: 16px;
   margin: 0 -12px;
   margin-bottom: 12px;
-}
-
-.top li {
-  padding: 0 12px;
 }
 
 .top .canopy {
@@ -265,6 +287,10 @@ li {
   background: #fff;
 }
 
+.button {
+margin-top: 25px;
+}
+
 button {
   background-color: #fff;
   border: none;
@@ -309,19 +335,33 @@ button:focus {
 }
 
 /* Popup Modal */
-.modal-tonic {
+.modal-h2 {
   padding: 18px 68px 22px 16px;
   color: #172b4d;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
+  margin-left: -17px;
+}
+
+.modal-img {
+  width: 100%;
 }
 
 .stack {
   padding-left: 16px;
+  margin-top: -25px;
 }
 
-.dummy-text {
+.dummy-textmobile {
+  display: block;
+}
+
+.dummy-textdesktop {
+  display: none;
+}
+
+.dummy-textmobile {
   padding-top: 12px;
   padding-bottom: 12px;
   font-weight: 400;
@@ -330,10 +370,21 @@ button:focus {
   color: #344563;
 }
 
+.wrapper.active {
+  opacity: 0.4;
+}
+
 .projects .modal-projects {
-  padding-bottom: 20px;
+  margin: 0 10px 29px -12px;
+}
+
+.border-line {
   border-bottom: 1px solid #ebecf0;
-  margin: 0 16px 50px 2px;
+  margin-top: -16px;
+}
+
+.projects .bootstraps {
+  display: none;
 }
 
 .btn2 img {
@@ -649,6 +700,10 @@ input.form-control::placeholder {
     color: #fff;
   }
 
+  .wrapper.active {
+    opacity: 0.4;
+  }
+
   .popup-img {
     width: 100%;
   }
@@ -749,6 +804,15 @@ input.form-control::placeholder {
     display: none;
     box-sizing: border-box;
     flex-direction: column;
+    margin: 142px 77px;
+    overflow: scroll;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+  }
+
+  .projects .bootstraps {
+    display: flex;
   }
 
   .modal-content {
@@ -758,14 +822,69 @@ input.form-control::placeholder {
     gap: 25px;
   }
 
+  .modal-h2 {
+    margin-left: -19px;
+  }
+
+  .modal-projects.html {
+    margin-bottom: 10px;
+  }
+  
+  .close-button {
+    position: absolute;
+    font-size: 50px;
+    right: 105px;
+    cursor: pointer;
+    color: #67798e;
+  }
+
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 400ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #c1c7d0cf;
+    backdrop-filter: blur(5px);
+    pointer-events: none;
+  }
+
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  } 
+
   .button {
     display: flex;
     gap: 30px;
     width: 300px;
+    padding-top: 15px;
   }
 
-  .dummy-text {
-    /* width: 700px; */
+  .modalmobile-img {
+    display: none;
+  }
+
+  .modaldesktop-img {
+    display: block;
+    width: 100%;
+  }
+
+  .stack {
+    padding-left: 0px;
+    margin-top: -26px;
+    margin-bottom: 20px;
+  }
+
+  .dummy-textmobile {
+    display: none;
+  }
+
+  .dummy-textdesktop {
+    display: block;
+    width: 778px;
     font-weight: 400;
     font-size: 16px;
     color: #344563;
