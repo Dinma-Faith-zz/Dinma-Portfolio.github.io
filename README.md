@@ -1,6 +1,7 @@
 # Portfolio
 
 The desktop version of my portfolio.
+/home/chidinma/Downloads/desktopVersionPortfolio.jpeg
 
 
 ![desktopVersionPortfolio](https://user-images.githubusercontent.com/69027469/166692967-7b71c0e3-1a8f-40e0-8679-2047dd3c7034.jpeg)

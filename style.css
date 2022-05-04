@@ -26,6 +26,7 @@ li {
   background-color: #fff;
   padding: 10px 24px;
   width: 100%;
+  position: fixed;
 }
 
 .header .logo {
