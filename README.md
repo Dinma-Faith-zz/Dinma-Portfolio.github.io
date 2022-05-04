@@ -2,6 +2,17 @@
 
 The desktop version of my portfolio.
 
+
+![desktopVersionPortfolio](https://user-images.githubusercontent.com/69027469/166692967-7b71c0e3-1a8f-40e0-8679-2047dd3c7034.jpeg)
+
+
+The mobile version of my portfolio. 
+
+![mobileVersionPortfolio](https://user-images.githubusercontent.com/69027469/166693647-0b29c1be-3e5e-4f37-b4c2-c593d55c769c.jpeg)
+
+
+
+
 ## Built With
 
 - HTML
