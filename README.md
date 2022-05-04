@@ -1,6 +1,7 @@
 # Portfolio
 
 The desktop version of my portfolio.
+/home/chidinma/Downloads/desktopVersionPortfolio.jpeg
 
 ## Built With
 
